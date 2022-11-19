@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 20;
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    border-bottom: 1px solid black;
+}
+
+#score{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 0px;
+    left: 480px;
+}
+
+h1{
+    font-style: italic;
+    font-size: 20pt;
+    color: royalblue;
+}
+
+#player{
+    width: 20px;
+    height: 50px;
+
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.animate{
+    animation: jump 500ms infinite;
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150;}
+}
+
+#object{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: object 1s infinite linear;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes object{
+    0%{left:480px}
+    100%{left:-40px;}
+}
+
